@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dev-luizguilherme.github.io/portfolio/sitemap.xml

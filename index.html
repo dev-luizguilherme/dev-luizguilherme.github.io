@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luiz Guilherme | Desenvolvedor Web Front-End</title>
+  <meta name="description" content="Portfólio de Luiz Guilherme, desenvolvedor web front-end e estudante de Engenharia de Software. Interfaces responsivas e acessíveis com HTML, CSS e JavaScript.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Luiz Guilherme Barreto da Silva">
+  <meta name="theme-color" content="#0c0d10">
+  <!-- [EDITAR] Confirme a URL final do site (GitHub Pages assumida). -->
+  <link rel="canonical" href="https://dev-luizguilherme.github.io/portfolio/">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Luiz Guilherme | Desenvolvedor Web Front-End">
+  <meta property="og:description" content="Interfaces responsivas e acessíveis com HTML, CSS e JavaScript. Veja projetos, formação e contato.">
+  <meta property="og:url" content="https://dev-luizguilherme.github.io/portfolio/">
+  <meta property="og:image" content="https://dev-luizguilherme.github.io/portfolio/assets/img/og-image.jpg">
+  <meta property="og:image:alt" content="Captura da landing page do Restaurante Bom Sabor, projeto do portfólio">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Luiz Guilherme | Desenvolvedor Web Front-End">
+  <meta name="twitter:description" content="Interfaces responsivas e acessíveis com HTML, CSS e JavaScript.">
+  <meta name="twitter:image" content="https://dev-luizguilherme.github.io/portfolio/assets/img/og-image.jpg">
+
+  <!-- Fontes: Google Fonts com fallback de sistema -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600;700&amp;display=swap">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Luiz Guilherme Barreto da Silva",
+    "alternateName": "Luiz Guilherme",
+    "jobTitle": "Desenvolvedor Web Front-End",
+    "url": "https://dev-luizguilherme.github.io/portfolio/",
+    "image": "https://dev-luizguilherme.github.io/portfolio/assets/img/perfil-460.jpg",
+    "email": "mailto:lg.link.pro@gmail.com",
+    "sameAs": [
+      "https://github.com/dev-luizguilherme",
+      "https://www.linkedin.com/in/luiz-guilherme-barreto-da-silva-97587a42a"
+    ],
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "Git", "GitHub", "Acessibilidade web", "Design responsivo"],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Centro Universitário FAMETRO"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="#inicio" aria-label="Luiz Guilherme, ir para o início">
+        <span class="brand__prompt" aria-hidden="true">&gt;_</span>
+        <span class="brand__name">luiz.dev</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+          <span class="nav__toggle-text">Menu</span>
+          <span class="nav__toggle-icon" aria-hidden="true"></span>
+        </button>
+        <ul class="nav__list" id="menu-principal">
+          <li><a class="nav__link" href="#sobre">Sobre</a></li>
+          <li><a class="nav__link" href="#habilidades">Habilidades</a></li>
+          <li><a class="nav__link" href="#projetos">Projetos</a></li>
+          <li><a class="nav__link" href="#formacao">Formação</a></li>
+          <li><a class="nav__link" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Alternar para o tema claro">
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+
+    <!-- HERO -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="hero__greeting">Olá, eu sou</p>
+          <h1 class="hero__title" id="hero-titulo">Luiz Guilherme</h1>
+          <p class="hero__role">Desenvolvedor Web Front-End e estudante de Engenharia de Software</p>
+          <p class="hero__slogan">Construo interfaces responsivas e acessíveis, e mostro o que sei em projetos reais.</p>
+          <ul class="hero__actions">
+            <li><a class="btn btn--primary" href="#projetos">Ver projetos</a></li>
+            <li><a class="btn btn--secondary" href="#contato">Falar comigo</a></li>
+            <li><a class="btn btn--ghost" href="assets/docs/curriculo-luiz-guilherme.pdf" download>Baixar currículo (PDF)</a></li>
+          </ul>
+        </div>
+
+        <aside class="terminal" aria-label="Resumo em formato de terminal">
+          <div class="terminal__bar" aria-hidden="true">
+            <span class="terminal__dot"></span><span class="terminal__dot"></span><span class="terminal__dot"></span>
+            <span class="terminal__title">luiz@portfolio: ~</span>
+          </div>
+          <div class="terminal__body">
+            <p class="terminal__line"><span class="terminal__prompt" aria-hidden="true">$</span> <span class="terminal__cmd">cat perfil.json</span></p>
+            <pre class="terminal__out terminal__line"><code>{
+  "cargo": "Front-End Web",
+  "formacao": "Engenharia de Software",
+  "stack": ["HTML", "CSS", "JavaScript"],
+  "foco": ["responsividade", "acessibilidade"],
+  "estudando": "JavaScript no navegador"
+}</code></pre>
+            <p class="terminal__line"><span class="terminal__prompt" aria-hidden="true">$</span> <span class="terminal__cmd">git log --oneline -1</span></p>
+            <p class="terminal__out terminal__line">Aprendendo em público, um projeto por vez<span class="terminal__cursor" aria-hidden="true"></span></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container about">
+        <figure class="about__figure">
+          <picture>
+            <source type="image/webp" srcset="assets/img/perfil-230.webp 230w, assets/img/perfil-460.webp 460w" sizes="(min-width: 768px) 280px, 200px">
+            <img src="assets/img/perfil-460.jpg" srcset="assets/img/perfil-230.jpg 230w, assets/img/perfil-460.jpg 460w" sizes="(min-width: 768px) 280px, 200px" width="460" height="460" loading="lazy" decoding="async" alt="Retrato de Luiz Guilherme sorrindo, de camisa preta, em um auditório com cadeiras vermelhas">
+          </picture>
+        </figure>
+        <div class="about__text">
+          <h2 class="section__title" id="sobre-titulo">Sobre mim</h2>
+          <p>Estudo para evoluir e construo projetos para mostrar minha capacitação.</p>
+          <p>No front-end web, desenvolvo interfaces com responsividade e acessibilidade usando HTML e CSS.</p>
+          <p>Agora estou aprendendo a alterar o comportamento de páginas com JavaScript.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section section--alt" id="habilidades" aria-labelledby="habilidades-titulo">
+      <div class="container">
+        <h2 class="section__title" id="habilidades-titulo">Habilidades</h2>
+        <div class="skills">
+          <article class="skill-group" aria-labelledby="sk-linguagens">
+            <h3 class="skill-group__title" id="sk-linguagens">Linguagens</h3>
+            <ul class="tags">
+              <li>JavaScript</li>
+            </ul>
+          </article>
+          <article class="skill-group" aria-labelledby="sk-front">
+            <h3 class="skill-group__title" id="sk-front">Front-end</h3>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </article>
+          <article class="skill-group" aria-labelledby="sk-ferramentas">
+            <h3 class="skill-group__title" id="sk-ferramentas">Ferramentas e metodologias</h3>
+            <ul class="tags">
+              <li>Git</li>
+              <li>GitHub</li>
+            </ul>
+          </article>
+          <article class="skill-group" aria-labelledby="sk-soft">
+            <h3 class="skill-group__title" id="sk-soft">Soft skills</h3>
+            <ul class="tags">
+              <li>Comunicação clara</li>
+              <li>Colaboração</li>
+              <li>Autonomia</li>
+              <li>Pensamento analítico</li>
+              <li>Resolução de problemas</li>
+              <li>Senso de responsabilidade</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section" id="projetos" aria-labelledby="projetos-titulo">
+      <div class="container">
+        <h2 class="section__title" id="projetos-titulo">Projetos</h2>
+
+        <article class="project" aria-labelledby="proj-restaurante">
+          <figure class="project__figure">
+            <picture>
+              <source type="image/webp" srcset="assets/img/restaurante-600.webp 600w, assets/img/restaurante-1200.webp 1200w" sizes="(min-width: 1024px) 560px, 100vw">
+              <img src="assets/img/restaurante-1200.jpg" srcset="assets/img/restaurante-600.jpg 600w, assets/img/restaurante-1200.jpg 1200w" sizes="(min-width: 1024px) 560px, 100vw" width="1200" height="760" loading="lazy" decoding="async" alt="Página inicial do Restaurante Bom Sabor com título, botão Pedir no WhatsApp e foto de um prato caseiro com arroz, feijão, bife acebolado e salada">
+            </picture>
+            <figcaption class="visually-hidden">Captura da página inicial do projeto Restaurante Bom Sabor.</figcaption>
+          </figure>
+          <div class="project__body">
+            <h3 class="project__title" id="proj-restaurante">Landing Page Restaurante Bom Sabor</h3>
+            <p>Landing page para o cliente consultar as opções do cardápio e fazer o pedido pelo WhatsApp do restaurante.</p>
+            <dl class="project__meta">
+              <div><dt>Meu papel</dt><dd>Desenvolvedor Front-End</dd></div>
+              <div><dt>Tecnologias</dt>
+                <dd><ul class="tags tags--small"><li>HTML</li><li>CSS</li></ul></dd>
+              </div>
+            </dl>
+            <ul class="project__links">
+              <li><a class="btn btn--primary" href="https://dev-luizguilherme.github.io/landing-page-restaurante/" target="_blank" rel="noopener noreferrer">Ver demonstração <span class="visually-hidden">do Restaurante Bom Sabor</span><span class="ext" aria-hidden="true">↗</span><span class="visually-hidden">(abre em nova aba)</span></a></li>
+              <li><a class="btn btn--secondary" href="https://github.com/dev-luizguilherme/landing-page-restaurante" target="_blank" rel="noopener noreferrer">Ver código <span class="visually-hidden">do Restaurante Bom Sabor no GitHub</span><span class="ext" aria-hidden="true">↗</span><span class="visually-hidden">(abre em nova aba)</span></a></li>
+            </ul>
+          </div>
+        </article>
+
+        <p class="projects__more">Mais projetos no meu <a href="https://github.com/dev-luizguilherme" target="_blank" rel="noopener noreferrer">perfil do GitHub<span class="ext" aria-hidden="true"> ↗</span><span class="visually-hidden">(abre em nova aba)</span></a>.</p>
+      </div>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section class="section section--alt" id="formacao" aria-labelledby="formacao-titulo">
+      <div class="container">
+        <h2 class="section__title" id="formacao-titulo">Formação e certificações</h2>
+        <div class="edu">
+          <article class="edu__item" aria-labelledby="edu-fametro">
+            <h3 class="edu__title" id="edu-fametro">Engenharia de Software</h3>
+            <p class="edu__org">Centro Universitário FAMETRO</p>
+            <p class="edu__date"><time datetime="2026-01">Jan/2026</time> até hoje (2º período)</p>
+          </article>
+          <article class="edu__item" aria-labelledby="edu-fcc">
+            <h3 class="edu__title" id="edu-fcc">Web Design Responsivo</h3>
+            <p class="edu__org">freeCodeCamp</p>
+            <p class="edu__date">Certificação</p>
+            <p><a href="https://www.freecodecamp.org/certification/fcc-4ecd3044-dcc8-43ef-95df-50a84e2cffb1/responsive-web-design-v9" target="_blank" rel="noopener noreferrer">Ver credencial<span class="visually-hidden"> de Web Design Responsivo (abre em nova aba)</span><span class="ext" aria-hidden="true"> ↗</span></a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section" id="contato" aria-labelledby="contato-titulo">
+      <div class="container contact">
+        <div class="contact__info">
+          <h2 class="section__title" id="contato-titulo">Contato</h2>
+          <p>Quer conversar sobre uma vaga, um projeto ou uma ideia? Escolha o canal que preferir.</p>
+          <address class="contact__list">
+            <ul>
+              <li><span class="contact__label">E-mail</span> <a href="mailto:lg.link.pro@gmail.com">lg.link.pro@gmail.com</a></li>
+              <li><span class="contact__label">WhatsApp</span> <a href="https://wa.me/5592984647931" target="_blank" rel="noopener noreferrer">(92) 98464-7931<span class="visually-hidden"> (abre em nova aba)</span><span class="ext" aria-hidden="true"> ↗</span></a></li>
+              <li><span class="contact__label">LinkedIn</span> <a href="https://www.linkedin.com/in/luiz-guilherme-barreto-da-silva-97587a42a" target="_blank" rel="noopener noreferrer">Luiz Guilherme Barreto da Silva<span class="visually-hidden"> (abre em nova aba)</span><span class="ext" aria-hidden="true"> ↗</span></a></li>
+              <li><span class="contact__label">GitHub</span> <a href="https://github.com/dev-luizguilherme" target="_blank" rel="noopener noreferrer">dev-luizguilherme<span class="visually-hidden"> (abre em nova aba)</span><span class="ext" aria-hidden="true"> ↗</span></a></li>
+            </ul>
+          </address>
+        </div>
+
+        <form class="form" id="form-contato" action="mailto:lg.link.pro@gmail.com" method="post" enctype="text/plain" novalidate>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Enviar mensagem por e-mail</legend>
+            <div class="form__field">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" autocomplete="name" required aria-describedby="erro-nome">
+              <p class="form__error" id="erro-nome" hidden></p>
+            </div>
+            <div class="form__field">
+              <label for="email">Seu e-mail</label>
+              <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="erro-email">
+              <p class="form__error" id="erro-email" hidden></p>
+            </div>
+            <div class="form__field">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" required minlength="10" aria-describedby="erro-mensagem"></textarea>
+              <p class="form__error" id="erro-mensagem" hidden></p>
+            </div>
+            <button class="btn btn--primary" type="submit">Abrir no meu e-mail</button>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>&copy; <time id="ano" datetime="2026">2026</time> Luiz Guilherme Barreto da Silva</p>
+      <ul class="site-footer__links">
+        <li><a href="https://github.com/dev-luizguilherme" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (abre em nova aba)</span></a></li>
+        <li><a href="https://www.linkedin.com/in/luiz-guilherme-barreto-da-silva-97587a42a" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (abre em nova aba)</span></a></li>
+        <li><a href="#inicio">Voltar ao topo</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
