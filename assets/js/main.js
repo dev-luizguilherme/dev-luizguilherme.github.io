@@ -92,7 +92,7 @@
   }
 
   /* ---------- Entrada por rolagem (cartões) ---------- */
-  const revealTargets = document.querySelectorAll('.skill-group, .project, .edu__item, .about__figure');
+  const revealTargets = document.querySelectorAll('.skill-group, .project, .edu__item');
   if ('IntersectionObserver' in window && !reduceMotion) {
     const reveal = new IntersectionObserver((entries, obs) => {
       entries.forEach((entry) => {
@@ -106,38 +106,6 @@
       el.style.setProperty('--delay', `${(i % 4) * 0.08}s`);
       reveal.observe(el);
     });
-  }
-
-  /* ---------- Terminal do hero: digitação dos comandos ---------- */
-  const terminal = document.querySelector('.terminal__body');
-  if (terminal && !reduceMotion) {
-    const lines = [...terminal.querySelectorAll('.terminal__line')];
-    const cursor = terminal.querySelector('.terminal__cursor');
-    const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-    // Reserva a altura final para não haver deslocamento de layout
-    terminal.style.minHeight = `${terminal.offsetHeight}px`;
-    lines.forEach((line) => { line.style.visibility = 'hidden'; });
-    if (cursor) cursor.style.visibility = 'hidden';
-
-    (async () => {
-      for (const line of lines) {
-        const cmd = line.querySelector('.terminal__cmd');
-        line.style.visibility = 'visible';
-        if (cmd) {
-          const text = cmd.textContent;
-          cmd.textContent = '';
-          for (const char of text) {
-            cmd.textContent += char;
-            await wait(38);
-          }
-          await wait(280);
-        } else {
-          await wait(160);
-        }
-      }
-      if (cursor) cursor.style.visibility = 'visible';
-    })();
   }
 
   /* ---------- Formulário de contato (mailto com validação) ---------- */

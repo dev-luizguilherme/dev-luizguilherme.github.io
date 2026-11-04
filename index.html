@@ -106,36 +106,18 @@
           </ul>
         </div>
 
-        <aside class="terminal" aria-label="Resumo em formato de terminal">
-          <div class="terminal__bar" aria-hidden="true">
-            <span class="terminal__dot"></span><span class="terminal__dot"></span><span class="terminal__dot"></span>
-            <span class="terminal__title">luiz@portfolio: ~</span>
-          </div>
-          <div class="terminal__body">
-            <p class="terminal__line"><span class="terminal__prompt" aria-hidden="true">$</span> <span class="terminal__cmd">cat perfil.json</span></p>
-            <pre class="terminal__out terminal__line"><code>{
-  "cargo": "Front-End Web",
-  "formacao": "Engenharia de Software",
-  "stack": ["HTML", "CSS", "JavaScript"],
-  "foco": ["responsividade", "acessibilidade"],
-  "estudando": "JavaScript no navegador"
-}</code></pre>
-            <p class="terminal__line"><span class="terminal__prompt" aria-hidden="true">$</span> <span class="terminal__cmd">git log --oneline -1</span></p>
-            <p class="terminal__out terminal__line">Aprendendo em público, um projeto por vez<span class="terminal__cursor" aria-hidden="true"></span></p>
-          </div>
-        </aside>
+        <figure class="hero__figure">
+          <picture>
+            <source type="image/webp" srcset="assets/img/perfil-230.webp 230w, assets/img/perfil-460.webp 460w" sizes="(min-width: 1024px) 24rem, (min-width: 480px) 20rem, 16rem">
+            <img src="assets/img/perfil-460.jpg" srcset="assets/img/perfil-230.jpg 230w, assets/img/perfil-460.jpg 460w" sizes="(min-width: 1024px) 24rem, (min-width: 480px) 20rem, 16rem" width="460" height="460" decoding="async" fetchpriority="high" alt="Retrato de Luiz Guilherme sorrindo, de camisa preta, em um auditório com cadeiras vermelhas">
+          </picture>
+        </figure>
       </div>
     </section>
 
     <!-- SOBRE -->
     <section class="section" id="sobre" aria-labelledby="sobre-titulo">
       <div class="container about">
-        <figure class="about__figure">
-          <picture>
-            <source type="image/webp" srcset="assets/img/perfil-230.webp 230w, assets/img/perfil-460.webp 460w" sizes="(min-width: 768px) 280px, 200px">
-            <img src="assets/img/perfil-460.jpg" srcset="assets/img/perfil-230.jpg 230w, assets/img/perfil-460.jpg 460w" sizes="(min-width: 768px) 280px, 200px" width="460" height="460" loading="lazy" decoding="async" alt="Retrato de Luiz Guilherme sorrindo, de camisa preta, em um auditório com cadeiras vermelhas">
-          </picture>
-        </figure>
         <div class="about__text">
           <h2 class="section__title" id="sobre-titulo">Sobre mim</h2>
           <p>Estudo para evoluir e construo projetos para mostrar minha capacitação.</p>
